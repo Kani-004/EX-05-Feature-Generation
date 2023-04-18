@@ -27,7 +27,7 @@ Apply Feature Generation techniques to all the feature of the data set
 Save the data to the file
 
 # CODE
-
+~~~
 data.csv
 import pandas as pd   
 import seaborn as sbn 
@@ -50,9 +50,9 @@ df = pd.get_dummies(df, prefix=['Ord_2'], columns=['Ord_2'])
 df.head(10) 
 df = pd.get_dummies(df, prefix=['Ord_1'], columns=['Ord_1']) 
 df.head(10)
-
+~~~
 # encoding.csv
-
+~~~
 import pandas as pd 
 import seaborn as sbn 
 data=pd.read_csv("/content/Encoding Data.csv") 
@@ -69,9 +69,9 @@ data= data.drop(['nom_0'], axis=1)
 data.head(10) 
 data = pd.get_dummies(df, prefix=['bin_2'], columns=['bin_2']) 
 data.head(10)
-
+~~~
 # titanic.csv
-
+~~~
 import pandas as pd 
 import seaborn as sbn 
 dt=pd.read_csv("/content/titanic_dataset.csv") 
@@ -95,7 +95,7 @@ dt = pd.get_dummies(dt, prefix=['Ticket'] ,columns=['Ticket'])
 df.head(10) 
 dt = pd.get_dummies(dt, prefix=['Embarked'] ,columns=['Embarked']) 
 df.head(10)
-
+~~~
 # OUPUT
 
 # Data.csv
